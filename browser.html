@@ -8,7 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="index.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="browser.css" media="screen">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 
     <title>Wellesley Course Registration</title>
     </head>
@@ -25,7 +30,7 @@
       <div class="col-4">
         <ul class="nav nav-pills justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active" href="browser.html" >Browser</a>
+            <a class="nav-link active" href="browser.html">Browser</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="scheduler.html">Scheduler</a>
@@ -42,7 +47,111 @@
       <hr>
     </div>
 
+    <div class="flex-container">
 
+      <div class="filter">
+
+        <nav class="navbar navbar-light bg-light">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Keywords" aria-label="Search">
+          </form>
+        </nav>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Semester
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Spring 2020</a>
+            <a class="dropdown-item" href="#">Fall 2019</a>
+            <a class="dropdown-item" href="#">Spring 2019</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Department
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Biological Sciences</a>
+            <a class="dropdown-item" href="#">Chemistry</a>
+            <a class="dropdown-item" href="#">Physics</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Faculty
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Aadnani Rachid</a>
+            <a class="dropdown-item" href="#">Abeberese Baafra</a>
+            <a class="dropdown-item" href="#">Adhikari Prabal</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Meeting Day
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Monday</a>
+            <a class="dropdown-item" href="#">Tuesday</a>
+            <a class="dropdown-item" href="#">Wednesday</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Meeting Time
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">8:30 AM - 10:20 AM</a>
+            <a class="dropdown-item" href="#">8:30 AM - 11:10 AM</a>
+            <a class="dropdown-item" href="#">8:30 AM -12:00 PM</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Distribution
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Epistemology and Cognition</a>
+            <a class="dropdown-item" href="#">Historical Studies</a>
+            <a class="dropdown-item" href="#">Language and Literature</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Pre-Graduate
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Pre-Dental</a>
+            <a class="dropdown-item" href="#">Pre-Medical</a>
+            <a class="dropdown-item" href="#">Pre-Veterinarian</a>
+          </div>
+        </div>
+
+      </div> <!--end of filter -->
+
+      <div class="browser">
+        <p>Courses</p>
+        <ul class="list-group list-group-flush">
+
+          <li class="list-group-item">Introduction to the Black Experience 
+          </li>
+
+          <li class="list-group-item">The African American Literary Tradition</li>
+          <li class="list-group-item">Unpacking Blackness, Ethnicity, and Identity</li>
+          <li class="list-group-item">COURSE TITLE</li>
+          <li class="list-group-item">COURSE TITLE</li>
+        </ul>
+
+      </div> <!--end of browser -->
+
+    </div> <!--end of flex container -->
 
 
     <!-- Optional JavaScript -->
@@ -50,5 +159,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </body>
 </html>
