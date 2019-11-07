@@ -3,3 +3,42 @@
 body{
 	margin: 15px;
 }
+
+/*.nav-item{ 
+	background-color: #1155cc !important;
+}*/
+
+.btn{
+	width: 192px;
+	background-color: #1155cc;
+
+}
+
+.dropdown{
+	padding: 6px;
+	margin-left: 11px;
+}
+
+.form-inline{
+	padding-bottom: 8px;
+}
+
+.browser{
+	width: 1000px;
+	height: 500px;
+}
+
+.flex-container > div {
+  margin: 50px 20px;
+}
+
+.flex-container{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-content: space-between;
+}
+
+.list-group-item{
+	height:80px;
+}
