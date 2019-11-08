@@ -2,5 +2,44 @@ body{
 	margin: 15px;
 }
 
+.waitlist-content{
+	margin-left: 100px;
+}
+.redbutton{
+	background-color: #FA8072;
+	margin-left: 30px;
+	width: 90px;
+}
+
+.greenbutton{
+	background-color: #98FB98;
+	margin-left: 30px;
+	width: 90px;
+}
+
+.course{
+	width:1000px;
+	display: flex;
+	align-content: space-between;
+}
+
+.list-group-item{
+	width: 600px;
+}
+
+.emailbutton{
+	margin-left: 30px;
+	width: 90px;
+}
+
+.input-group-text{
+	margin-left: 30px;
+}
+
+.section-title{
+	font-weight: bold;
+	font-size: 24px;
+}
+
 
 
