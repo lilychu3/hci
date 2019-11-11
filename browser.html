@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" type="text/css" href="browser.css" media="screen">
 
+    <script src="browser.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -137,16 +139,101 @@
       </div> <!--end of filter -->
 
       <div class="browser">
+
         <p>Courses</p>
+        
         <ul class="list-group list-group-flush">
 
-          <li class="list-group-item">Introduction to the Black Experience 
-          </li>
+          <div class = "flex-container-browser">
+            <li class="list-group-item">
+              <div id="course"><em>AFR 105-01</em></div>
+              <div id="info">T- 12:45pm-3:25pm; Current Enrollment: 46; Seats Available/Max: 0/46; Distributions: HS, SBA</div>
+              <div id="title">Introduction to the Black Experience</div>
+              <div id="prof">Professor Selwyn Cudjoe</div>
+            </li>
 
-          <li class="list-group-item">The African American Literary Tradition</li>
-          <li class="list-group-item">Unpacking Blackness, Ethnicity, and Identity</li>
-          <li class="list-group-item">COURSE TITLE</li>
-          <li class="list-group-item">COURSE TITLE</li>
+            <div class="actions">
+              <ul>
+                <li>
+                <img id="changeWhenClicked" src="img/empty-star.png" alt="empty star" width="26" height="26" onclick="changeStar()">
+                </li>
+                <li>
+                <img src="img/arrow.png" alt="arrow" width="36" height="36">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class = "flex-container-browser">
+            <li class="list-group-item">
+              <div id="course"><em>AFR 201-01</em></div>
+              <div id="info">M- 6:30pm-9:10pm; Current Enrollment: 23; Seats Available/Max: 23/46; Distributions: LL</div>
+              <div id="title">The African American Literary Tradition</div>
+              <div id="prof">Professor Selwyn Cudjoe</div>
+            </li>
+
+            <div class="actions">
+              <ul>
+                <li>
+                <img id = "changeWhenClicked2" src="img/empty-star.png" alt="empty star" width="26" height="26" onclick="changeStar2()">
+                </li>
+                <li>
+                <img src="img/arrow.png" alt="arrow" width="36" height="36">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class = "flex-container-browser">
+            <li class="list-group-item">
+              <div id="course"><em>AFR 215-01</em></div>
+              <div id="info">T- 12:45pm-3:25pm; Current Enrollment: 17; Seats Available/Max: 8/25; Distributions: HS, SBA</div>
+              <div id="title">Unpacking Blackness, Ethnicity, and Identity</div>
+              <div id="prof">Professor Chipo Dendere</div>
+            </li>
+
+            <div class="actions">
+              <ul>
+                <li>
+                <img id = "changeWhenClicked3" src="img/empty-star.png" alt="empty star" width="26" height="26" onclick="changeStar3()">
+                </li>
+                <li>
+                <img src="img/arrow.png" alt="arrow" width="36" height="36">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class = "flex-container-browser">
+            <li class="list-group-item">COURSE TITLE</li>
+            
+            <div class="actions">
+              <ul>
+                <li>
+                <img id = "changeWhenClicked4" src="img/empty-star.png" alt="empty star" width="26" height="26" onclick="changeStar4()">
+                </li>
+                <li>
+                <img src="img/arrow.png" alt="arrow" width="36" height="36">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class = "flex-container-browser">
+            <li class="list-group-item">COURSE TITLE</li>
+
+            <div class="actions">
+              <ul>
+                <li>
+                <img id = "changeWhenClicked5" src="img/empty-star.png" alt="empty star" width="26" height="26" onclick="changeStar5()">
+                </li>
+                <li>
+                <img src="img/arrow.png" alt="arrow" width="36" height="36">
+                </li>
+              </ul>
+            </div>
+          </div>
+
         </ul>
 
       </div> <!--end of browser -->

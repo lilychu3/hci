@@ -39,6 +39,43 @@ body{
    align-content: space-between;
 }
 
-.list-group-item{
-	height:80px;
+.flex-container-browser{
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
 }
+
+.list-group-item{
+	height:100px;
+	width: 700px;
+}
+
+#course{
+	font-size: 12px;
+}
+
+#info{
+	color: blue;
+	font-size: 8px;
+}
+
+#title{
+	font-size: 18px;
+}
+
+#prof{
+	font-size:  12px;
+	color: blue;
+}
+
+.actions{
+	padding-top: 15px;
+	width: 80px;
+	line-height: 40px;
+}
+
+li{
+	list-style: none;
+}
+
+
