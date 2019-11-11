@@ -2,10 +2,32 @@ body{
 	margin: 15px;
 }
 
+.searchbar{
+	margin-left: 300px
+}
+
 .toggle{
-	width:300px;
-	padding-left: 20px;
 	border-style: solid;
-	border-width: 5px
-	border-color: black;
+	border-width: 1.5px;
+	width: 270px;
+	padding: 15px;
+}
+
+.progress-tag{
+	font-size: 10pt;
+}
+
+.degree-req{
+	width: 270px;
+	border-style: solid;
+	border-width: 1.5px;
+	padding: 15px;
+}
+
+.active-cyan input[type=text] {
+border-bottom: 1px solid #4dd0e1;
+box-shadow: 0 1px 0 0 #4dd0e1;
+}
+.active-cyan .fa, .active-cyan-2 .fa {
+color: #4dd0e1;
 }
