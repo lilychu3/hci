@@ -59,39 +59,216 @@
       <br/>
       <div class="Offers">
         <p class="section-title">Offers</p>
-        <div class = "course">
+        <div class = "course" id="afr">
           <span class="list-group-item">AFR 201 - Africana Studies</span>
-          <input class = "greenbutton" type = "submit" value = "Accept">
-          <input class = "redbutton" type = "submit" value = "Decline">
+          <button type="button" class="greenbutton" data-toggle="modal" data-target="#acceptModal1">
+            Accept
+          </button>
+          <button type="button" class="redbutton" data-toggle="modal" data-target="#declineModal1">
+            Decline
+          </button>
         </div>
         <p></p>
-        <div class = "course">
+        <div class = "course" id="econ">
           <span class="list-group-item">Econ 101 - Introduction to Microeconomics</span>
-          <input class = "greenbutton" type = "submit" value = "Accept">
-          <input class = "redbutton" type = "submit" value = "Decline">
+          <button type="button" class="greenbutton" data-toggle="modal" data-target="#acceptModal2">
+            Accept
+          </button>
+          <button type="button" class="redbutton" data-toggle="modal" data-target="#declineModal2">
+            Decline
+          </button>
         </div>
       </div>
       <br/>
       <div class="registered">
         <p class="section-title">Registered Courses</p>
-        <div class = "course">
+        <div class = "course" id="chem">
           <span class="list-group-item">CHEM 105 - Fundametals of Chemistry with Laboratory</span>
-          <input class = "redbutton" type = "submit" value = "DROP">
+          <button type="button" class="redbutton" data-toggle="modal" data-target="#dropModal1">
+            Drop
+          </button>
         </div>
         <p></p>
-        <div class = "course">
+        <div class = "course" id="bisc">
           <span class="list-group-item">BISC 200 - Ecology with Laboratory</span>
-          <input class = "redbutton" type = "submit" value = "DROP">
+           <button type="button" class="redbutton" data-toggle="modal" data-target="#dropModal2">
+            Drop
+          </button>
         </div>
         <p></p>
-        <div class = "course">
+        <div class = "course" id="eng">
           <span class="list-group-item">ENG 120 - Critical Interpretation</span>
-          <input class = "redbutton" type = "submit" value = "DROP">
+          <button type="button" class="redbutton" data-toggle="modal" data-target="#dropModal3">
+            Drop
+          </button>
         </div>
         <p></p>
-        <div class = "course">
+        <div class = "course" id="soc">
           <span class="list-group-item">SOC 209 - Criminology</span>
-          <input class = "redbutton" type = "submit" value = "DROP">
+          <button id="soc109" type="button" class="redbutton" data-toggle="modal" data-target="#dropModal4">
+            Drop
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->   
+    <div class="modal fade" id="acceptModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            You have accepted offer for this class: <br><br>
+            AFR 201 - Africana Studies
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel Acceptance</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="removeItem('afr')">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="acceptModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            You have accepted offer for this class:  <br><br>
+            Econ 101 - Introduction to Microeconomics
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel Acceptance</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"  onclick="removeItem('econ')">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="declineModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            You have declined offer for this class: <br><br>
+            AFR 201 - Africana Studies
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="removeItem('afr')">Confirm Decline</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="declineModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            You have declined offer for this class:  <br><br>
+            Econ 101 - Introduction to Microeconomics
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="removeItem('econ')">Decline</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="dropModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to drop this course? <br>
+            CHEM 105 - Fundametals of Chemistry with Laboratory
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="removeItem('chem')">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="dropModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to drop this course? <br>
+            BISC 200 - Ecology with Laboratory
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="removeItem('bisc')">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="dropModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to drop this course? <br>
+            ENG 120 - Critical Interpretation
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="removeItem('eng')">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="dropModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to drop this course? <br>
+            SOC 209 - Criminology
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="removeItem('soc')">Confirm</button>
+          </div>
         </div>
       </div>
     </div>
@@ -103,5 +280,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script >
+      function removeItem(id){
+        item = document.getElementById(id);
+        item.parentNode.removeChild(item);
+      }
+    </script>
   </body>
 </html>
