@@ -21,12 +21,17 @@ body{
 	padding-right: 120px;
 }
 
+.btn-primary1{
+	background-color: #14c91d;
+	color: white;
+}
+
 .toggle{
 	border-style: solid;
 	border-width: 2px;
 	border-color: black;
 	height: 170px;
-	padding: 10px;
+	padding: 5px;
 }
 
 .flex-container{

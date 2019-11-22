@@ -57,9 +57,35 @@
     </div>
 
     <div class="register-button">
-      <button type="button" class="btn btn-success">Register this Schedule</button>
+      <button type="button" class="btn btn-primary1" data-toggle="modal" data-target="#exampleModal">
+      Register this Schedule
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Registration Status</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Successfully registered for 3/4 classes <br>
+            AFR 201-01 Full: Failed to Register
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="pictureChange()">Close</button>
+            <a href="waitlist.html"><button type="button" class="btn btn-primary" >Waitlist</button></a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+
 
   <div class = "flex-container">
 
@@ -69,7 +95,7 @@
         <p> Key Legend </p>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="toggleCheckOne(2)">
-          <label class="form-check-label" for="defaultCheck1" style="color:#00008B;">Register</label>
+          <label class="form-check-label" for="defaultCheck1" style="color:#00008B;">Final Registered Schedule</label>
         </div>
 
         <div class="form-check">

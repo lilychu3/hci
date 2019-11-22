@@ -27,3 +27,8 @@ function changeImage(one, two) {
 
 	document.getElementById('calendar').src = src;
 }
+
+function pictureChange()
+    {
+    document.getElementById('calendar').src="img/after-register.png";
+    }

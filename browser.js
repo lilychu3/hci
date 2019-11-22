@@ -5,6 +5,7 @@ function changeStar() {
 
     if (somethingSRC == "img/empty-star.png") {
        something.attr("src", "img/filled-star.png");
+       alert("You have successfully added AFR 211 to your 'Saved For Later' scheduler.");
         console.log("message");
     } else {
        something.attr("src", "img/empty-star.png");
@@ -19,6 +20,7 @@ function changeStar2() {
 	
     if (somethingSRC == "img/empty-star.png") {
        something.attr("src", "img/filled-star.png");
+       alert("You have successfully added AFR 236 to your 'Saved For Later' scheduler.");
         console.log("message");
     } else {
        something.attr("src", "img/empty-star.png");
@@ -33,6 +35,7 @@ function changeStar3() {
 	
     if (somethingSRC == "img/empty-star.png") {
        something.attr("src", "img/filled-star.png");
+       alert("You have successfully added AFR 239 to your 'Saved For Later' scheduler.");
         console.log("message");
     } else {
        something.attr("src", "img/empty-star.png");
@@ -47,6 +50,7 @@ function changeStar4() {
 	
     if (somethingSRC == "img/empty-star.png") {
        something.attr("src", "img/filled-star.png");
+       alert("You have successfully added AFR 243 to your 'Saved For Later' scheduler.");
         console.log("message");
     } else {
        something.attr("src", "img/empty-star.png");
@@ -61,6 +65,7 @@ function changeStar5() {
 	
     if (somethingSRC == "img/empty-star.png") {
        something.attr("src", "img/filled-star.png");
+       alert("You have successfully added AFR 245 to your 'Saved For Later' scheduler.");
         console.log("message");
     } else {
        something.attr("src", "img/empty-star.png");
